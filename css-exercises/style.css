@@ -1,0 +1,16 @@
+.one{
+    color:white; 
+    background-color:red;
+    font-size: 32px;
+    text-align: center;
+}
+.two{
+    color:white;
+    background-color: green;
+    font-size: 18px;
+}
+.three{
+    color:black;
+    background-color: orange;
+    font-size: 18px;
+}

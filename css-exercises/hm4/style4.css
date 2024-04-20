@@ -1,0 +1,14 @@
+
+
+#parent{
+    color: red;
+}
+
+/* .child{
+    color: green;
+} */
+
+*{
+    outline: 2px solid red;
+}
+
