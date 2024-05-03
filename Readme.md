@@ -9,7 +9,7 @@ Here are some of the projects I've completed as part of The Odin Project curricu
 
 ### Project 1: Rock Paper Scissors
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[View Project](./JavaScript-exercises/)**
+- **[View Project](./JavaScript-exercises/Rock_paper/index.html)**
 
 ### Project 2: Calculator
 - **Description**: A simple calculator that performs basic arithmetic operations.

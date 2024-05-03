@@ -1,0 +1,72 @@
+
+
+body{
+    background-color: #F1F1F1;
+}
+
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p{
+    font-size: 26px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.movement{
+    display: flex;
+   justify-content: center;
+   margin: 0px;
+}
+
+
+
+button{
+    border: none;
+    padding:16px;
+    font-size: 40px;
+    margin: 5px;
+    border-radius: 10px; 
+}
+
+button:hover{
+    scale: 1.2;
+}
+button:active{
+    scale:0.8; 
+}
+#rock{
+    background-color: red;
+}
+
+#paper{
+    background-color: blue;
+}
+
+#scissors{
+    background-color: green;
+}
+
+
+#your-score{
+    color: green; 
+}
+
+#computer-score{
+    color:red; 
+}
+
+
