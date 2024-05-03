@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+       <div class="output input">
+        <div class="pre" data-previous-operand></div>
+        <div class="current" data-current-operand></div>
+       </div>
+        <div class="row">
+            <div class="circle"   data-all-clear>AC</div>
+            <div class="circle" data-delete>Del</div>
+            <div class="circle" data-opeartion>%</div>
+            <div class="circle" data-operation>/</div>
+        </div>
+        <div class="row">
+            <div class="circle" data-number>7</div>
+            <div class="circle" data-number>8</div>
+            <div class="circle" data-number>9</div>
+            <div class="circle"  data-operation>*</div>
+        </div>
+        <div class="row">
+            <div class="circle" data-number>4</div>
+            <div class="circle" data-number>5</div>
+            <div class="circle" data-number >6</div>
+            <div class="circle" data-operation>-</div>
+        </div>
+        <div class="row">
+            <div class="circle" data-number >1</div>
+            <div class="circle" data-number >2</div>
+            <div class="circle" data-number>3</div>
+            <div class="circle" data-operation>+</div>
+        </div>
+        <div class="row">
+            <div class="circle decimal" data-number>.</div>
+            <div class="circle zero" data-number>0</div>
+            <div class="circle" id="equation" data-equals>=</div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

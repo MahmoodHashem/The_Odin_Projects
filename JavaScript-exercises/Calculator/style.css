@@ -1,0 +1,85 @@
+
+
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#equation{
+    flex: 0.5;
+    border-radius: 40px;
+    background-color: #eeccff;
+    font-size: 50px;
+    align-content: center;
+    font-weight: bold;
+}
+
+
+
+body{
+    background-color: #eeccff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.circle{
+    background-color: #ecf0f3;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    user-select: none;
+    align-content: center;
+}
+
+
+
+.circle:active{
+    scale: 1.1;
+    user-select: none;
+}
+
+.card{
+    width: 400px;
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 30px;
+    gap: 10px;
+    user-select: none;
+}
+
+
+.input{
+    padding: 20px; 
+    border: none ;
+    border-radius: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-size: 30px;
+    min-height: 40px;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    align-items: end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.pre{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.627);
+}
