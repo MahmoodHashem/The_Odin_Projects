@@ -9,9 +9,11 @@ Here are some of the projects I've completed as part of The Odin Project curricu
 
 ### Project 1: Rock Paper Scissors
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[View Project](./JavaScript-exercises/Rock_paper)**
+- **[Live Site](./JavaScript-exercises/Rock_paper)**
+- **[Reop](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Rock_paper)**
 
 ### Project 2: Calculator
 - **Description**: A simple calculator that performs basic arithmetic operations.
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[View Project](./JavaScript-exercises/Calculatorl)**
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Calculator/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Calculator)**
