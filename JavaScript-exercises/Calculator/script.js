@@ -29,11 +29,9 @@ class Calculator {
     }
 
     compute() {
-
         let computation;
         const pre = parseFloat(this.previousOperand);
         const current = parseFloat(this.currentOperand);
-
         if (isNaN(pre) || isNaN(current)) return
 
         switch (this.operation) {
@@ -47,7 +45,12 @@ class Calculator {
                 computation = pre * current;
                 break;
             case '/':
-                computation = pre / current;
+                computation = pre / current;  
+                break;   
+            case '%': 
+                computation = (pre * current) / 100;  
+                break;    
+
             default:
                 return;
         }
