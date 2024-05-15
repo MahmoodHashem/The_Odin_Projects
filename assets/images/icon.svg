@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <svg class="odin" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="200"
-        height="200" viewBox="0 0 44 60" fill="none">
+    <svg class="odin" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="50"
+        height="50" viewBox="0 0 44 60" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M8.68927 35.4922L13.148 20.0493H30.9831L35.4419 35.4922H8.68927Z" fill="#EED9C3"></path>
         <ellipse cx="27.7848" cy="27.8815" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
@@ -41,6 +31,3 @@
             d="M23.6636 34.1729H20.5425C20.5425 34.1729 20.5425 34.694 20.5425 35.2732C20.5425 35.6813 20.707 36.0723 20.9995 36.3608C21.292 36.6493 21.6884 36.8116 22.1022 36.8116C22.1026 36.8116 22.1035 36.8116 22.1039 36.8116C22.5177 36.8116 22.9141 36.6493 23.2066 36.3608C23.4991 36.0723 23.6636 35.6813 23.6636 35.2732C23.6636 34.694 23.6636 34.1729 23.6636 34.1729Z"
             fill="#353535"></path>
     </svg>
-</body>
-
-</html>
