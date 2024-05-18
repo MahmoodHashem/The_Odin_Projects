@@ -1,0 +1,105 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4918651d8f.js" crossorigin="anonymous"></script>
+
+    <style>
+
+      body,h1{
+            margin: 0;
+            padding: 0; 
+        }
+        .side{
+            width: 250px;
+            background-color: #1a3f59;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .items{
+           
+            margin-left: 10px;
+        }
+
+        h1{
+            padding: 10px;
+            color: white;
+            font-family: sans-serif;
+
+        }
+
+        .item{
+            display: flex;
+            gap: 10px;
+            padding: 10px 25px;
+            margin: 5px;
+            width: 100%;
+            font-size: 20px;
+            font-weight: lighter;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            transition: 0.5s;
+            color: white;
+        }
+
+        .item:hover{
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            color: black;
+          
+           
+        }
+
+        @keyframes showItem {
+            from{width: 0;}
+            to{width: 100%;}
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="side">
+        <h1>
+            Best Course
+        </h1>
+        <div class="items">
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-table-cells-large"></i></div>
+            <div class="name">Dashboard</div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+            <div class="name">Courses</div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-star"></i></div>
+            <div class="name">Favorites</div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <div class="name">Report</div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+            <div class="name">Certificate</div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="name">Message</div>
+        </div>
+        <div class="item">
+            <div class="icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="name">Settings</div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

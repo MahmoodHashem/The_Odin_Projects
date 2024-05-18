@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0px;
+        }
+
+        .row-1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .inner {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #fdeca6;
+            border-radius: 10px;
+            padding: 8px 15px
+        }
+
+        .col-1 {
+            grid-column: span 2;
+        }
+
+
+        .contents {
+            padding-left: 20px;
+        }
+
+        .h {
+            font-weight: bold;
+            font-family: sans-serif;
+            opacity: 0.7;
+        }
+
+        .profile {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row row-1">
+            <div>Recent Students</div>
+            <div><img src="icons/more.svg" alt=""></div>
+        </div>
+        <div class="contents"></div>
+        <div class="header row">
+            <div class="h col-1">Student</div>
+            <div class="h">Course</div>
+            <div class="h">price</div>
+            <div class="h">Date</div>
+        </div>
+
+
+        <div class="row">
+            <div class="inner col-1">
+                <div class="profile"></div>
+                <div class="name">Ahmad</div>
+            </div>
+
+                <div class="course">Course Two</div>
+                <div class="price">$243</div>
+                <div class="date">5/17/2024</div>
+        </div>
+        <div class="row">
+            <div class="inner col-1">
+                <div class="profile"></div>
+                <div class="name">Ali</div>
+            </div>
+
+
+            <div class="course">Course Three</div>
+            <div class="price">$120</div>
+            <div class="date">5/17/202</div>
+
+        </div>
+        <div class="row">
+            <div class="inner col-1">
+                <div class="profile"></div>
+                <div class="name">Mahmood</div>
+            </div>
+            <div class="course">Course One</div>
+            <div class="price">$1,243</div>
+            <div class="icon">5/17/2024</div>
+        </div>
+        <div class="row">
+            <div class="inner col-1">
+                <div class="profile"></div>
+                <div class="name">Ahmad</div>
+            </div>
+            <div class="course">Course Two</div>
+            <div class="price">$123</div>
+            <div class="date">5/18/2024</div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
