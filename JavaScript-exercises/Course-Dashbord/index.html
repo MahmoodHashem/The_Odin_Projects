@@ -1,14 +1,312 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="icon" href="/assets/images/dashbord.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4918651d8f.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    
+
+    <div class="grid-container">
+        <div class="side">
+            <h1>
+                Best Course
+            </h1>
+            <div class="items">
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-table-cells-large"></i></div>
+                    <div class="name">Dashboard</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="name">Courses</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-star"></i></div>
+                    <div class="name">Favorites</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-chart-pie"></i></div>
+                    <div class="name">Report</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="name">Certificate</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="name">Message</div>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                    <div class="name">Settings</div>
+                </div>
+            </div>
+        </div>
+
+        <!------------ Nav bar ------------>
+        <div class="nav-bar">
+            <ul>
+                <li class="nav-brand">
+                    <h1>Dashboard</h1>
+                </li>
+                <li><i class="fa-solid fa-calendar-days"></i></li>
+                <li><i class="fa-solid fa-bell"></i></li>
+                <li>
+                    <div class="search-bar">
+                        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" placeholder="Search Course">
+                        <div role="button" class="search-text">Search</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!------------------------>
+
+
+
+        <!-- First column cards-->
+
+        <div class="card courses">
+            <h1 class="number">7498</h1>
+            <div class="sub">Total Courses</div>
+            <div class="state">
+                <div class="main-state">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="percentage">12%</div>
+            </div>
+        </div>
+        <div class="card teachers">
+            <h1 class="number">1356</h1>
+            <div class="sub">Total Teachers</div>
+            <div class="state">
+                <div class="main-state">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="percentage">6,5%</div>
+            </div>
+        </div>
+        <div class="card students">
+            <h1 class="number">10034</h1>
+            <div class="sub">Total students</div>
+            <div class="state">
+                <div class="main-state">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <i class="fa-solid fa-chart-line"></i>
+                <div>9%</div>
+            </div>
+        </div>
+
+        <div class="award-card">
+            <div class="award-icon"><i class="fa-solid fa-shield"></i></div>
+            <div class="award-text">Congrats! <br> You're Level 5</div>
+        </div>
+
+        <!--------------------------------->
+
+
+        <!--Popular Category Container -->
+
+        <div class="category-container">
+            <div class="row row-1">
+                <div>Popular Category</div>
+                <div><img src="icons/more.svg" alt=""></div>
+            </div>
+            <div class="contents">
+                <div class="row">
+                    <div class="inner col-1">
+                        <div class="icon"><img src="icons/camera-enhance.svg" alt=""></div>
+                        <div class="label">Photography</div>
+                    </div>
+                    <div class="inner ">
+                        <div class="icon"><img width="25" src="icons/eye.svg" alt=""></div>
+                        <div class="label">9,123</div>
+                    </div>
+                    <div class="inner ">
+                        <div class="icon"><img width="25" src="icons/bookmark.svg" alt=""></div>
+                        <div class="label">1,243</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/square.svg" alt=""></div>
+                        <div class="icon">$2,234</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inner col-1">
+                        <div class="icon"><img width="25" src="icons/pencil-ruler.svg" alt=""></div>
+                        <div class="icon">Grapic Design</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/eye.svg" alt=""></div>
+                        <div class="label">9,123</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/bookmark.svg" alt=""></div>
+                        <div class="label">1,243</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/square.svg" alt=""></div>
+                        <div class="icon">$2,234</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inner col-1">
+                        <div class="icon"><img width="25" src="icons/math-integral-box.svg" alt=""></div>
+                        <div class="icon">Mathematics</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/eye.svg" alt=""></div>
+                        <div class="label">9,123</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/bookmark.svg" alt=""></div>
+                        <div class="label">1,243</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/square.svg" alt=""></div>
+                        <div class="icon">$2,234</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="inner col-1">
+                        <div class="icon"><img width="25" src="icons/file-code.svg" alt=""></div>
+                        <div class="icon">Coding</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/eye.svg" alt=""></div>
+                        <div class="label">9,123</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/bookmark.svg" alt=""></div>
+                        <div class="label">1,243</div>
+                    </div>
+                    <div class="inner">
+                        <div class="icon"><img width="25" src="icons/square.svg" alt=""></div>
+                        <div class="icon">$2,234</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------>
+
+
+        <!--Platform summary -->
+        <div class="summary-platform">
+            <div class="title">
+                <div class="text">Platform Summary</div>
+                <div class="more-icon"><i class="fa-solid fa-ellipsis"></i></div>
+            </div>
+
+            <img src="icons/DataGlossary_Icons_Pie Chart.jpg" width="120" alt="">
+            <div class="summary-row row1">
+                <div class="item1">
+                    <div class="com-course">256,850</div>
+                    <div class="com-course-sub">Course Completed</div>
+                </div>
+                <div class="item2">+5,723</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="summary-row row2">
+                <div class="item1">
+                    <div class="com-course">13,072</div>
+                    <div class="com-course-sub">Student Approved</div>
+                </div>
+                <div class="item2">+894</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="summary-row row3">
+                <div class="item1">
+                    <div class="com-course">1,574</div>
+                    <div class="com-course-sub">Teacher Licsenced</div>
+                </div>
+                <div class="item2">+375</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="summary-row row4">
+                <div class="item1">
+                    <div class="com-course">200</div>
+                    <div class="com-course-sub">Course Added</div>
+                </div>
+                <div class="item2">+50</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+        <!------------------------->
+
+
+
+
+        <!--Recent Students -->
+
+        <div class="container">
+            <div class="row row-1">
+                <div>Recent Students</div>
+                <div><img src="icons/more.svg" alt=""></div>
+            </div>
+            <div class="contents"></div>
+            <div class="header row">
+                <div class="h col-1">Student</div>
+                <div class="h">Course</div>
+                <div class="h">price</div>
+                <div class="h">Date</div>
+            </div>
+
+
+            <div class="row">
+                <div class="inner col-1">
+                    <div class="profile"></div>
+                    <div class="name">Ahmad</div>
+                </div>
+
+                <div class="course">Course Two</div>
+                <div class="price">$243</div>
+                <div class="date">5/17/2024</div>
+            </div>
+            <div class="row">
+                <div class="inner col-1">
+                    <div class="profile"></div>
+                    <div class="name">Ali</div>
+                </div>
+
+
+                <div class="course">Course Three</div>
+                <div class="price">$120</div>
+                <div class="date">5/17/202</div>
+
+            </div>
+            <div class="row">
+                <div class="inner col-1">
+                    <div class="profile"></div>
+                    <div class="name">Mahmood</div>
+                </div>
+                <div class="course">Course One</div>
+                <div class="price">$1,243</div>
+                <div class="icon">5/17/2024</div>
+            </div>
+            <div class="row">
+                <div class="inner col-1">
+                    <div class="profile"></div>
+                    <div class="name">Ahmad</div>
+                </div>
+                <div class="course">Course Two</div>
+                <div class="price">$123</div>
+                <div class="date">5/18/2024</div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
