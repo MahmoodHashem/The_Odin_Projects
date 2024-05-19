@@ -10,7 +10,22 @@
 </head>
 
 <body>
-    <div class="navbar">
+
+
+  
+    <span class="overlay"></span>
+
+    <div class="sidebar" id="sidebar">
+      <ul>
+        <li><img id="close-menu" src="assets/images/icon-menu-close.svg" alt=""></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+
+    <nav class="navbar">
         <div class="header">
             <img src="./assets/images/icon.svg" alt="logo">
             <h2>
@@ -19,16 +34,15 @@
 
         </div>
         <ul>
+            <li id="menu"><img src="./assets/images/icon-menu.svg" alt=""></li>
             <li><a href="#home">Home</a></li>
             <li><a href="./about/About/index.html" target="_blank">About</a></li>
             <li><a href="./about/Social links profile/index.html" target="_blank">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
 
-  <div class="class"></div>
-  <div class="class"></div>
-  <div class="class"></div>
+
     <div class="card">
         <div class="project-card">
             <h1>Rock Paper Scissors</h1>
@@ -44,7 +58,54 @@
                 <a href="#">Project Repo</a>
             </span>
         </div>
+        <div class="project-card">
+            <h1>Form</h1>
+            <span class="link">
+                <a href="./JavaScript-exercises/form/index.html" target="_blank">Live Site</a>
+                <a href="#">Project Repo</a>
+            </span>
+        </div>
+        <div class="project-card">
+            <h1>Dashboard</h1>
+            <span class="link">
+                <a href="./JavaScript-exercises/Course-Dashbord/index.html" target="_blank">Live Site</a>
+                <a href="#">Project Repo</a>
+            </span>
+        </div>
     </div>
+
+
+    <script>
+        const page = document; 
+    const sidebar = document.getElementById('sidebar'); 
+    const overlay = document.querySelector('.overlay'); 
+
+    const menu = document.querySelector('#menu'); 
+    const close = document.querySelector('#close-menu')
+
+
+    menu.addEventListener('click', ()=>{
+      toggleScroll()
+      sidebar.style.display = 'block'; 
+      overlay.style.display = 'block'; 
+    })
+
+    close.addEventListener('click', ()=>{
+      toggleScroll(); 
+      sidebar.style.display = 'none'; 
+      overlay.style.display = 'none'; 
+    })
+
+
+    function toggleScroll() {
+    document.body.style.overflowY = document.body.style.overflowY === 'hidden' ? 'auto' : 'hidden';
+ 
+}
+
+    </script>
+
+
+
 </body>
 
 </html>

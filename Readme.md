@@ -23,3 +23,8 @@ Here are some of the projects I've completed as part of The Odin Project curricu
 - **Technologies Used**: HTML, CSS, JavaScript
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/form/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/form)**
+
+### Project 4: Dashboard
+- **Technologies Used**: HTML, CSS, JavaScript
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Course-Dashbord/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Course-Dashbord)**

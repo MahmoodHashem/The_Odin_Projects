@@ -6,8 +6,8 @@
 }
 
 body{
-    margin: 0;
-
+  margin: 0; 
+  overflow: auto;
 }
 
 .header{
@@ -15,9 +15,111 @@ body{
     font-family: Norse, sans-serif;
 }
 
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  .navbar ul li a{
+    display: none;
+  }
+
+  .navbar h2{
+    font-size: 16px;
+  }
+
+
+  .sidebar{
+    display: none;
+    position: absolute;
+    background: linear-gradient(to left, #DEDEDE, #fdd28c);
+    height: 100%;
+    width: 70%;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+
+
+  .sidebar ul li:first-child {
+    align-self: flex-end;
+    padding: 10px 20px;
+  }
+
+
+
+  .sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+    list-style: none;
+  }
+
+  #menu{
+    margin-right: 20px;
+  }
+
+
+
+  .sidebar ul li a{
+    font-size: 25px;
+    padding: 20px;
+  }
+
+  .project-card{
+    max-width: 200px;
+    max-height: 80px;
+  }
+
+  .project-card h1{
+    font-size: 18px;
+  }
+
+  .project-card a{
+    font-size: 12px;
+  }
+
+}
+
+
+@media screen and (min-width: 601px) {
+  
+  .navbar ul li:first-child{
+    display: none;
+  }
+
+  .sidebar{
+    display: none;
+  }
+
+  .project-card{
+    max-width: 400px;
+    max-height: 100px;
+  }
+
+  .navbar h2{
+    font-size: 35px;
+  }
+  
+
+}
+
+
 .navbar {
     display: flex;
-    position: fixed;
+  position: sticky;
     z-index: 1;
     background-color: white;
     width: 100%;
@@ -33,17 +135,19 @@ body{
     display: flex;
     list-style-type: none;
   }
-  
+
+
   .navbar ul li a {
     text-decoration: none;
     margin: 0 10px;
     color: black;
-    font-family: inter, sans-serif;
-    font-size: 25px;
+    font-family: Norse, sans-serif;
+    font-size: 35px;
   }
+
   
   .navbar ul li a:hover {
-    color: red;
+    color:#E3B261
   }
   
   .navbar.active {
@@ -51,15 +155,11 @@ body{
   }
   
 
-  .card{
-    margin-top: 100px;
-  }
+
 
   .project-card{
-    width: 400px;
-    height: 100px;
+ 
     background-color: #DEDEDE;
-  
     padding: 20px;
     margin: 10px;
     border-left: 30px solid #E3B261;
