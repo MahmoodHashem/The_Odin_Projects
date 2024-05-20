@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jersey+10+Charted&family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1 class="heading">
+            My Library
+        </h1>
+    </nav>
+
+    <div class="book-lists">
+        <div class="item-wrapper">
+            <div class="item">
+                <div class="book-name">"The subtle art of not giving a fuck"</div>
+                <div class="author-con">
+                    <br>
+                    by
+                    <br>
+                    <br>
+                    <strong class="author">Mark Tomson</strong>
+                </div>
+                <div class="pages">
+                    <br>
+                    220 pages
+                </div>
+                <div class="state">
+                    <br>
+                    Unread
+                </div>
+            </div>
+            <div class="btns">
+                <button class="btn read-btn">Read</button>
+                <button class="btn delete-btn">Delete</button>
+            </div>
+        </div>
+        <div class="add-book"></div>
+    </div>
+
+
+    <dialog class="modal">
+        <h2>Add New book</h2>
+        <form action="" method="dialog">
+            <div class="book-title input">
+                <label for="title">Title</label>
+                <input type="text" data-title required placeholder="e.g Head first to JavaScript">
+            </div>
+            <div class="book-author input">
+                <label for="author">Author</label>
+                <input type="text" data-author required placeholder="e.g Eric Freeman & Elisabith">
+            </div>
+            <div class="book-page input">
+                <label for="page">Pages</label>
+                <input type="number" data-pages required placeholder="e.g 704">
+            </div>
+
+            <fieldset>
+                <legend>Have you ever read this book?</legend>
+                <div class="radios">
+                    <div class="true">
+                        <input type="radio" id="yes" name="state" value="1" required>
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="false">
+                        <input  type="radio" id="no" name="state" value="0" default required>
+                        <label for="no">No</label>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <div class="btns">
+                <button class="btn" data-add>Add</button>
+                <button class="btn" data-cancel>Cancel</button>
+            </div>
+
+        </form>
+    </dialog>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

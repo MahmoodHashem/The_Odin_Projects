@@ -1,0 +1,168 @@
+:root {
+    --main-font: "Signika Negative";
+    --card-width: 250px;
+    --card-height: 300px;
+}
+
+* {
+    font-family: var(--main-font);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #9AC8CD;
+}
+
+.nav-bar {
+    background-color: #0E46A3;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.143);
+    font-family: var(--main-font), serif;
+    text-align: center;
+}
+
+.heading {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+
+.item {
+    width: var(--card-width);
+    height: var(--card-height);
+    background-color: #1679AB;
+    box-shadow: inset 4px 0px 7px 2px #0E46A3;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.item .book-name {
+    text-transform: capitalize;
+}
+
+.add-book {
+    width: var(--card-width);
+    height: var(--card-height);
+    font-size: 100px;
+    background-color: #e1f7f58b;
+    outline: 2px dashed white;
+    display: grid;
+    font-family: "signika Negative";
+    font-weight: bold;
+    margin: 20px;
+}
+
+.add-book::after {
+    content: "+";
+    align-self: center;
+    justify-self: center;
+    color: rgb(136, 136, 136);
+}
+
+.add-book:hover {
+    cursor: pointer;
+    background-color: #e1f7f5e0;
+
+}
+
+.book-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--card-width));
+    gap: 10px;
+}
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--card-width));
+    gap: 10px;
+}
+
+.author {
+    color: #FFC55A;
+    text-transform: capitalize;
+}
+
+.state {
+    /* color: #41B06E; */
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.item-wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    width: var(--card-width);
+    margin-top: 10px;
+}
+
+.modal .btns{
+    width: 100%;
+}
+
+.btn {
+    padding: 8px 15px;
+    width: calc(var(--card-width) / 3);
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.modal {
+    width: calc(var(--card-width) + 80px);
+    border: none;
+}
+
+.modal::backdrop {
+    backdrop-filter: blur(10px);
+}
+
+
+.modal h2 {
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 10px;
+}
+
+.input input {
+    padding: 10px;
+    border: 1px solid #577B8D;
+}
+
+fieldset{
+   margin: 15px 10px;
+}
+
+
+.radios{
+    display: flex;
+    justify-content: space-around;
+}
