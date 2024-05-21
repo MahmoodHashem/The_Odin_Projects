@@ -33,3 +33,12 @@ Here are some of the projects I've completed as part of The Odin Project curricu
 - **Technologies Used**: HTML, CSS, JavaScript
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Library/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Library)**
+
+
+### Contributing
+
+Feel free to fork this repository and submit pull requests to contribute to these projects. You can also open issues to discuss potential improvements or any bugs you find.
+
+### Contact
+If you have any questions, feel free to [contact me](mailto:shmahmoodham143@gmail.com).
+---
