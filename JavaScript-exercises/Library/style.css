@@ -1,12 +1,81 @@
 :root {
     --main-font: "Signika Negative";
-    --card-width: 250px;
-    --card-height: 300px;
+    --card-width: 200px;
+    --card-height: 250px;
 }
 
 * {
     font-family: var(--main-font);
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .add-book {
+        width: 50px; 
+        height: 50px;
+        font-size: 25px;
+        border-radius: 100%;
+        background-color: white;
+        box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, 0.516);
+        position: fixed; 
+        bottom: 0; ;
+        right: 0;
+        display: grid;
+        font-family: "signika Negative";
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    .modal{
+        max-width: 300px;
+    }
+
+    .book-lists {
+        
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (min-width: 601px) {
+    .add-book {
+        width: var(--card-width);
+        height: var(--card-height);
+        font-size: 100px;
+        background-color: #e1f7f58b;
+        outline: 2px dashed white;
+        display: grid;
+        font-family: "signika Negative";
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    .modal{
+        width: calc(var(--card-width) + 80px);
+    }
+
+    .book-lists {
+        align-items: start;
+    }
+    .item{
+        width: var(--card-width);
+        height: var(--card-height);
+    }
+
+    .btns{
+        width: var(--card-width);
+    }
+}
+
+
+.add-book::after {
+    content: "+";
+    align-self: center;
+    justify-self: center;
+    color: rgb(136, 136, 136);
+}
+
 
 body {
     margin: 0;
@@ -33,8 +102,7 @@ body {
 
 
 .item {
-    width: var(--card-width);
-    height: var(--card-height);
+ 
     background-color: #1679AB;
     box-shadow: inset 4px 0px 7px 2px #0E46A3;
     text-align: center;
@@ -50,24 +118,9 @@ body {
     text-transform: capitalize;
 }
 
-.add-book {
-    width: var(--card-width);
-    height: var(--card-height);
-    font-size: 100px;
-    background-color: #e1f7f58b;
-    outline: 2px dashed white;
-    display: grid;
-    font-family: "signika Negative";
-    font-weight: bold;
-    margin: 20px;
-}
 
-.add-book::after {
-    content: "+";
-    align-self: center;
-    justify-self: center;
-    color: rgb(136, 136, 136);
-}
+
+
 
 .add-book:hover {
     cursor: pointer;
@@ -93,8 +146,6 @@ body {
 }
 
 .state {
-    /* color: #41B06E; */
-    color: red;
     font-weight: bold;
     font-size: 20px;
 }
@@ -110,7 +161,7 @@ body {
 .btns {
     display: flex;
     justify-content: space-around;
-    width: var(--card-width);
+  
     margin-top: 10px;
 }
 
@@ -132,7 +183,7 @@ body {
 }
 
 .modal {
-    width: calc(var(--card-width) + 80px);
+   
     border: none;
 }
 
