@@ -16,7 +16,7 @@ This is a library project completed as part of The Odin Project course. The proj
 
 ## Live Preview
 
-- [Live Preview](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Library/index.htm)
+- [Live Preview](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Library/index.html)
 
 ## Author
 
