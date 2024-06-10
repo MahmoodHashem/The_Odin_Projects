@@ -34,6 +34,11 @@ Here are some of the projects I've completed as part of The Odin Project curricu
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Library/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Library)**
 
+### Project 6: Tic Tac Toe
+- **Technologies Used**: HTML, CSS, JavaScript
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/tictactoe/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/tictactoe)**
+
 
 ### Contributing
 
