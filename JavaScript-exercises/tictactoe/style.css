@@ -1,15 +1,15 @@
 body {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
     background-color: #142282;
     font-family: Lato, sans-serif;
+    text-align: center;
+}
+
+.container{
+    max-width: 400px;
+    margin: auto;
 }
 
 .cell {
-    width: 80px;
-    height: 80px;
     border: none;
     background-color: #04082D;
     display: grid;
@@ -80,10 +80,6 @@ dialog::backdrop {
 
 .playerPlaceholder:nth-child(3) {
     background-color: rgb(81, 217, 81);
-}
-
-.container {
-    width: auto
 }
 
 .vs {
