@@ -1,11 +1,200 @@
-@font-face {
-    font-family: 'MyFont';
-    src: url('./fonts/Norse.otf'); 
-    font-weight: 600;
-    font-style: normal;
+@media screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column;
   }
-  
-.hello{
-    color: blue;
+
+  p{
+    padding: 0;
+  }
+
+  .menue-conatiner{
+    grid-template-columns: auto;
+  }
 }
 
+@media screen and (min-width: 601px) {
+  p {
+    padding: 0 20%;
+  }
+
+  .menue-conatiner{
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+body {
+  background-image: url(./images/afghanfood.jpg),
+    linear-gradient(to left, white, black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* overflow: hidden; */
+  background-color: black;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+}
+
+nav button {
+  width: 100%;
+  font-size: 1.5rem;
+  border: 1px solid;
+  border-collapse: collapse;
+  cursor: pointer;
+  margin: 5px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  color: white;
+  transition: 0.2s;
+}
+
+nav button:hover {
+  color: rgb(197, 122, 68);
+  background-color: transparent;
+}
+
+.home-btn {
+  background-color: rgb(197, 122, 68, 0.4);
+}
+
+#home > p {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: white;
+  padding: 0 20%;
+}
+
+p{
+    color: white;
+
+}
+
+main {
+  background: rgba(0, 0, 0, 0.414);
+  background-attachment: fixed;
+  height: 100%;
+  padding: 20px;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+.col {
+  width: 100%;
+}
+
+.col img {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.menues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menues p,
+h3 {
+  text-align: start;
+  margin: 5px;
+  padding: 0;
+}
+
+.name {
+  color: chocolate;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name span {
+  font-size: 18px;
+  color: rgb(197, 122, 68);
+}
+
+.name span::after {
+  content: "Afg";
+  font-size: 10px;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+}
+
+.ingredients {
+  background-color: rgb(52, 49, 49);
+  height: 70%;
+  position: relative;
+  right: 20px;
+  padding: 5px 20px;
+  overflow: hidden;
+}
+
+.menue-conatiner {
+  display: grid;
+
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+form {
+  backdrop-filter: blur(5px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 500px;
+  gap: 10px;
+  margin: auto;
+  padding: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+}
+
+.label input {
+  padding: 10px 20px;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  font-size: 15px;
+}
+
+form button {
+  border: none;
+  background-color: rgb(197, 122, 68);
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  cursor: pointer;
+}

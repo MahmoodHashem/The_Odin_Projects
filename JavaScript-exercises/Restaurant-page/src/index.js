@@ -1,21 +1,43 @@
-import _ from 'lodash'
+import createContact from './contact';
+import createHomePage from './createHomePage';
+import initLoad from './initload';
+import createMenu from './menu';
+import { navigateTo } from './navigateTo';
+
 import './style.css'
-import printMe from './print';
 
-function component() {
-    const element = document.createElement('div');
- 
-    const btn = document.createElement('button');
-    
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello'); 
+initLoad();
 
-    btn.innerHTML = 'Click me and check the console!';
-    btn.onclick = printMe;
-  
-    element.appendChild(btn); 
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
+const main = document.querySelector("main"); 
+
+
+ const home = document.querySelector('#home');
+ const menu = document.querySelector('#menu');
+ const contact = document.querySelector('#contact');
+
+const homeBtn = document.querySelector(".home-btn");
+const menuBtn = document.querySelector(".menu-btn");
+const contactBtn = document.querySelector(".contact-btn"); 
+
+
+function clearDom(){
+    const section = document.querySelector('section')
+        main.removeChild(section); 
+   
+}
+
+
+homeBtn.addEventListener('click', function(){
+    clearDom()
+    navigateTo('home'); 
+})
+
+menuBtn.addEventListener('click', function(){
+    clearDom()
+    navigateTo('menu'); 
+});
+
+contactBtn.addEventListener('click', function(){
+    clearDom()
+    navigateTo('contact'); 
+})

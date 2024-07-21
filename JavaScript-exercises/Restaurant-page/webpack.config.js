@@ -5,11 +5,14 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js', 
-    print: './src/print.js'
+    clear: './src/clearContent.js'
+
   }, 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Output Management',
+      title: 'Restaurant page',
+      filename: 'index.html', 
+        template: 'src/template.html'
     }),
   ],
   output: {
@@ -26,6 +29,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        use: 'img-loader'
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
