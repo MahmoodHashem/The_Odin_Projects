@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+html{
+  color-scheme: light dark;
+}
+
+:root{
+  /* Light them colors*/
+--Very-light-gray: hsl(0, 0%, 98%); 
+--Very-light-grayish-blue: hsl(236, 33%, 92%); 
+--Light-grayish-blue: hsl(233, 11%, 84%); 
+--Dark-grayish-blue: hsl(236, 9%, 61%); 
+--Very-dark-grayish-blue: hsl(235, 19%, 35%); 
+
+
+
+/*Dark them colors*/
+--Very-dark-blue: hsl(235, 21%, 11%); 
+--Very-dark-desaturated-blue: hsl(235, 24%, 19%); 
+--Light-grayish-blue: hsl(234, 39%, 85%); 
+--Light-grayish-blue: hsl(236, 33%, 92%); /* (hover)*/
+--Dark-grayish-blue: hsl(234, 11%, 52%); 
+--Very-dark-grayish-blue: hsl(237, 14%, 26%); 
+}
+
+
+
+@media screen and (max-width: 449px){
+    .mobile-todo-footer{
+        display: block;
+        text-align: center;
+    }
+
+    .tabs{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 450px) {
+    .mobile-todo-footer{
+        display: none;
+    }
+
+    .tabs{
+        display:block;
+    }
+    
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  
+    body{
+      background-image: url(./images/bg-desktop-dark.jpg);
+    }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  
+  body{
+    background-image:url(./images/bg-desktop-light.jpg); 
+  }
+}
+
+
+body.dark-mode {
+  background-image: url(./images/bg-desktop-dark.jpg);
+  color-scheme: dark;
+}
+
+body.light-mode {
+  background-image: url(./images/bg-desktop-light.jpg);
+  color-scheme: light;
+}
+
+  
+
+
+  
+    
+
+
+body {
+
+  background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  color: light-dark( var(--Very-dark-blue), var(--Very-light-gray));
+  background-color: light-dark(var(--Very-light-gray), var(--Very-dark-blue));
+}
+
+main {
+  width: 80%;
+  max-width: 31.25rem; 
+  display: flex;
+  flex-direction: column;
+  margin-top: 5.5rem;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  letter-spacing:0.65rem;
+  color:var(--Very-light-gray);
+
+}
+
+
+.todo-input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: light-dark(var(--Very-light-gray), var(--Very-dark-desaturated-blue));
+  padding: 0 1rem;
+  border-radius: 0.35rem;
+}
+
+.todo-input input:last-child {
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  width: 100%;
+  background-color: light-dark(var(--Very-light-gray), var(--Very-dark-desaturated-blue));
+}
+
+.todo-input input:last-child:focus {
+  border: none;
+  outline: none;
+}
+
+
+.todo-list {
+  background-color: light-dark(var(--Very-light-gray), var(--Very-dark-desaturated-blue));
+  margin-top: 0.65rem;
+  border-radius: 0.35rem;
+  box-shadow: -2px 6px 11px 6px rgba(0, 0, 0, 0.236);
+}
+
+
+.task {
+  padding: 1rem;
+  border-bottom: 1px solid var(--Dark-grayish-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.task label {
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.task label .cross {
+  margin-left: auto;
+}
+
+[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.custome-checkbox {
+  --size:1.25rem;
+  display: inline-block;
+  width: var(--size);
+  height: var(--size);
+  border: 0.8px solid hsl(234, 39%, 85%);
+  border-radius: 50%;
+}
+
+[type="checkbox"]:checked+label .custome-checkbox {
+  background: url(./images/icon-check.svg), linear-gradient(45deg, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+[type="checkbox"]:checked+label {
+  color: hsl(233, 11%, 84%);
+  text-decoration: line-through;
+}
+
+.todo-list-footer {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 1rem;
+  color: hsl(235, 19%, 35%)
+}
+
+ .tabs span:hover, .mobile-todo-footer span:hover, .clear-completed:hover {
+  cursor: pointer;
+  color: light-dark(var(--Very-dark-desaturated-blue), var(--Light-grayish-blue))
+}
+
+.active {
+  color: hsl(220, 98%, 61%);
+}
+
+.left-items {
+  margin-right: auto;
+}
+
+.clear-completed {
+  margin-left: auto;
+}
+
+
+.attribution {
+  position: sticky; 
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+  bottom: 0;
+  background-color: light-dark(var(--Dark-grayish-blue), var(--Very-dark-desaturated-blue));
+  width: 100%;
+}
+
+.attribution a {
+  color: white
+}
