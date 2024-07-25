@@ -1,0 +1,110 @@
+h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 5px;
+}
+
+body {
+    height: 100vh;
+    background-color: #151d2f;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    nav{
+        flex-direction: column;
+    }
+    
+}
+
+.searchbar {
+    display: flex;
+}
+
+input {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.searchbar button {
+    border: none;
+    border-radius: 5px;
+    background-color: #13fc97;
+    cursor: pointer;
+}
+
+
+.spiner {
+    display: none;
+    width: 8rem;
+    height: 8rem;
+    border: 2rem solid #2b304b;
+    border-radius: 50%;
+    border-top-color: #13fc97;
+    animation: spin 3s infinite;
+}
+
+
+.copy-btn {
+    background-color: #13fc97;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+
+
+.error {
+    display: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.error h2 {
+    color: red;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+
+    }
+}
