@@ -7,15 +7,16 @@
 
 body{
   margin: 0; 
-  overflow-y: auto;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  font-family:sans-serif;
 }
 
 
 
-.header{
-    display: flex;
-    font-family: Norse, sans-serif;
+.nav-brand{
+  display: flex;
+  align-items: center;
+ font-family: Norse, sans-serif;
 }
 
 
@@ -28,8 +29,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100%;
+    overflow-x: hidden;
+  }
+
+  .grid-container{
+    align-self: center;
   }
 
 
@@ -43,14 +48,14 @@ body{
 
 
   .sidebar{
-    display: none;
     position: absolute;
     background: linear-gradient(to left, #DEDEDE, #fdd28c);
     height: 100%;
     width: 70%;
     top: 0;
-    right: 0;
+    right: -500px;
     z-index: 2;
+    transition: all 0.5s;
   }
 
 
@@ -101,7 +106,7 @@ body{
   
   .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 300px))
+    grid-template-columns: repeat(auto-fit, 300px)
   }
 
   .navbar ul li:first-child{
@@ -131,10 +136,9 @@ body{
 
 .navbar {
     display: flex;
-  position: sticky;
+   position: sticky;
     z-index: 1;
     background-color: white;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -174,7 +178,7 @@ body{
     padding: 20px;
     margin: 10px;
     border-left: 30px solid #E3B261;
-    border-radius: 20px;
+    border-radius: 15px;
     box-sizing: border-box;
   }
 
@@ -185,7 +189,7 @@ body{
 
 
   a{
-    font-size: 20px;
+    font-size: 16px;
     color: black; 
     text-decoration: none;
   }

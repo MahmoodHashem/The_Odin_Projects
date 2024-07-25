@@ -1,127 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Oding Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
-
-
-
+  <body>
     <span class="overlay"></span>
 
     <div class="sidebar" id="sidebar">
-        <ul>
-            <li><img id="close-menu" src="assets/images/icon-menu-close.svg" alt=""></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+      <ul>
+        <li>
+          <img id="close-menu" src="assets/images/icon-menu-close.svg" alt="" />
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-
 
     <nav class="navbar">
-        <div class="header">
-            <img src="./assets/images/icon.svg" alt="logo">
-            <h2>
-                The Odin Project Assignments
-            </h2>
-
-        </div>
-        <ul>
-            <li id="menu"><img src="./assets/images/icon-menu.svg" alt=""></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="./about/About/index.html" target="_blank">About</a></li>
-            <li><a href="./about/Social links profile/index.html" target="_blank">Contact</a></li>
-        </ul>
+      <h2 class="nav-brand">
+        <img src="./assets/images/icon.svg" alt="logo" />
+        The Odin Project Assignments
+      </h2>
+      <ul>
+        <li id="menu"><img src="./assets/images/icon-menu.svg" alt="" /></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="./about/About/index.html" target="_blank">About</a></li>
+        <li>
+          <a href="./about/Social links profile/index.html" target="_blank"
+            >Contact</a>
+        </li>
+      </ul>
     </nav>
 
+    <div class="grid-container"></div>
 
-    <div class="grid-container">
-        <div class="project-card">
-            <h1>Rock Paper Scissors</h1>
-            <span class="link">
-                <a href="./JavaScript-exercises/Rock_paper/index.html" target="_blank">Live Site</a>
-                <a target="_blank" href="https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Rock_paper">Project
-                    Repo</a>
-            </span>
-        </div>
-        <div class="project-card">
-            <h1>Calculator</h1>
-            <span class="link">
-                <a href="./JavaScript-exercises/Calculator/index.html" target="_blank">Live Site</a>
-                <a target="_blank" href="https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Calculator">Project
-                    Repo</a>
-            </span>
-        </div>
-        <div class="project-card">
-            <h1>Form</h1>
-            <span class="link">
-                <a href="./JavaScript-exercises/form/index.html" target="_blank">Live Site</a>
-                <a target="_blank" href="https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/form">Project
-                    Repo</a>
-            </span>
-        </div>
-        <div class="project-card">
-            <h1>Dashboard</h1>
-            <span class="link">
-                <a href="./JavaScript-exercises/Course-Dashbord/index.html" target="_blank">Live Site</a>
-                <a target="_blank"
-                    href="https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Course-Dashbord">Project
-                    Repo</a>
-            </span>
-        </div>
+    <template id="project-template">
+      <div class="project-card">
+        <h1></h1>
+        <span class="link">
+          <a href="" target="_blank" id="live">Live Site</a>
+          <a target="_blank" href="" id="repo">Project Repo</a>
+        </span>
+      </div>
+    </template>
 
+    <script src="./script.js" ></script>
 
-
-        <div class="project-card">
-            <h1>Library</h1>
-            <span class="link">
-                <a  href="https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Library/index.html" target="_blank">Live Site</a>
-                <a
-                    href="https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Library" target="_blank">Project
-                    Repo</a>
-            </span>
-        </div>
-
-    </div>
-
-    <script>
-        const page = document;
-        const sidebar = document.getElementById('sidebar');
-        const overlay = document.querySelector('.overlay');
-
-        const menu = document.querySelector('#menu');
-        const close = document.querySelector('#close-menu')
-
-
-        menu.addEventListener('click', () => {
-            toggleScroll()
-            sidebar.style.display = 'block';
-            overlay.style.display = 'block';
-        })
-
-        close.addEventListener('click', () => {
-            toggleScroll();
-            sidebar.style.display = 'none';
-            overlay.style.display = 'none';
-        })
-
-
-        function toggleScroll() {
-            document.body.style.overflowY = document.body.style.overflowY === 'hidden' ? 'auto' : 'hidden';
-
-        }
-
-    </script>
-
-
-
-</body>
-
+  </body>
 </html>
