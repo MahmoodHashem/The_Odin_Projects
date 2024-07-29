@@ -15,7 +15,7 @@ body {
 
   .header{
     display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap;  /* the lesson*/
   }
 
   .text{

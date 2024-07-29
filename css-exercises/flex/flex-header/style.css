@@ -4,6 +4,14 @@
     display: flex; 
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 650px) {
+
+    .left-links, .right-links{
+        display: none;
+    }
+    
+  }
   
   .logo {
     font-size: 48px;

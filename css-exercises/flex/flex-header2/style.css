@@ -6,6 +6,13 @@ body {
   font-family: Besley, serif;
 }
 
+
+@media screen and (max-width: 650px) {
+  .links{
+    display: none;
+  }
+}
+
 .header {
   background: white;
   border-bottom: 1px solid #ddd;

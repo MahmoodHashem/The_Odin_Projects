@@ -1,3 +1,6 @@
+Time Spent on this Repository:
+[![wakatime](https://wakatime.com/badge/github/MahmoodHashem/The_Odin_Projects.svg)](https://wakatime.com/badge/github/MahmoodHashem/The_Odin_Projects)
+
 # The Odin Project Assignments
 
 This repository contains my personal projects and assignments completed through [The Odin Project](https://www.theodinproject.com/), a comprehensive curriculum for learning Full Stack Web Development.
