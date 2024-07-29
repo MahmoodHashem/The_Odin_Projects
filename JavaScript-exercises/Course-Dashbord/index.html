@@ -11,114 +11,145 @@
 
 </head>
 
-<body>
+<body class="grid-container">
+    <nav class="nav-bar">
+        <ul>
+            <li class="nav-brand">
+                <h1>Dashboard</h1>
+            </li>
+            <li><i class="fa-solid fa-calendar-days"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li>
+                <div class="search-bar">
+                    <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" placeholder="Search Course">
+                    <div role="button" class="search-text">Search</div>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
-    <div class="grid-container">
-        <div class="side">
-            <h1>
-                Best Course
-            </h1>
-            <div class="items">
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-table-cells-large"></i></div>
-                    <div class="name">Dashboard</div>
-                </div>
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-book-open"></i></div>
-                    <div class="name">Courses</div>
-                </div>
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-star"></i></div>
-                    <div class="name">Favorites</div>
-                </div>
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-chart-pie"></i></div>
-                    <div class="name">Report</div>
-                </div>
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-certificate"></i></div>
-                    <div class="name">Certificate</div>
-                </div>
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="name">Message</div>
-                </div>
-                <div class="item">
-                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                    <div class="name">Settings</div>
-                </div>
+
+    <aside class="side">
+        <h1>
+            Best Course
+        </h1>
+        <div class="items">
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-table-cells-large"></i></div>
+                <div class="name">Dashboard</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="name">Courses</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-star"></i></div>
+                <div class="name">Favorites</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <div class="name">Report</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="name">Certificate</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="name">Message</div>
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa-solid fa-gear"></i></div>
+                <div class="name">Settings</div>
             </div>
         </div>
+    </aside>
 
-        <!------------ Nav bar ------------>
-        <div class="nav-bar">
-            <ul>
-                <li class="nav-brand">
-                    <h1>Dashboard</h1>
-                </li>
-                <li><i class="fa-solid fa-calendar-days"></i></li>
-                <li><i class="fa-solid fa-bell"></i></li>
-                <li>
-                    <div class="search-bar">
-                        <span class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        <input type="text" placeholder="Search Course">
-                        <div role="button" class="search-text">Search</div>
+    <main>
+
+        <section class="status first-col">
+            <div class="card courses">
+                <h1 class="number">7498</h1>
+                <div class="sub">Total Courses</div>
+                <div class="state">
+                    <div class="main-state">
+                        <i class="fa-solid fa-book-open"></i>
                     </div>
-                </li>
-            </ul>
-        </div>
-
-        <!------------------------>
-
-
-
-        <!-- First column cards-->
-
-        <div class="card courses">
-            <h1 class="number">7498</h1>
-            <div class="sub">Total Courses</div>
-            <div class="state">
-                <div class="main-state">
-                    <i class="fa-solid fa-book-open"></i>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div class="percentage">12%</div>
                 </div>
-                <i class="fa-solid fa-chart-line"></i>
-                <div class="percentage">12%</div>
             </div>
-        </div>
-        <div class="card teachers">
-            <h1 class="number">1356</h1>
-            <div class="sub">Total Teachers</div>
-            <div class="state">
-                <div class="main-state">
-                    <i class="fa-solid fa-chalkboard-user"></i>
+            <div class="card teachers">
+                <h1 class="number">1356</h1>
+                <div class="sub">Total Teachers</div>
+                <div class="state">
+                    <div class="main-state">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div class="percentage">6,5%</div>
                 </div>
-                <i class="fa-solid fa-chart-line"></i>
-                <div class="percentage">6,5%</div>
             </div>
-        </div>
-        <div class="card students">
-            <h1 class="number">10034</h1>
-            <div class="sub">Total students</div>
-            <div class="state">
-                <div class="main-state">
-                    <i class="fa-solid fa-graduation-cap"></i>
+            <div class="card students">
+                <h1 class="number">10034</h1>
+                <div class="sub">Total students</div>
+                <div class="state">
+                    <div class="main-state">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div>9%</div>
                 </div>
-                <i class="fa-solid fa-chart-line"></i>
-                <div>9%</div>
             </div>
-        </div>
+            <div class="award-card">
+                <div class="award-icon"><i class="fa-solid fa-shield"></i></div>
+                <div class="award-text">Congrats! <br> You're Level 5</div>
+            </div>
+        </section>
 
-        <div class="award-card">
-            <div class="award-icon"><i class="fa-solid fa-shield"></i></div>
-            <div class="award-text">Congrats! <br> You're Level 5</div>
-        </div>
+        <section class="summary-platform">
+            <div class="title">
+                <div class="text">Platform Summary</div>
+                <div class="more-icon"><i class="fa-solid fa-ellipsis"></i></div>
+            </div>
 
-        <!--------------------------------->
+            <img src="icons/DataGlossary_Icons_Pie Chart.jpg" width="120" alt="">
+            <div class="summary-row row1">
+                <div class="item1">
+                    <div class="com-course">256,850</div>
+                    <div class="com-course-sub">Course Completed</div>
+                </div>
+                <div class="item2">+5,723</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="summary-row row2">
+                <div class="item1">
+                    <div class="com-course">13,072</div>
+                    <div class="com-course-sub">Student Approved</div>
+                </div>
+                <div class="item2">+894</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="summary-row row3">
+                <div class="item1">
+                    <div class="com-course">1,574</div>
+                    <div class="com-course-sub">Teacher Licsenced</div>
+                </div>
+                <div class="item2">+375</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+            <div class="summary-row row4">
+                <div class="item1">
+                    <div class="com-course">200</div>
+                    <div class="com-course-sub">Course Added</div>
+                </div>
+                <div class="item2">+50</div>
+                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </section>
 
-
-        <!--Popular Category Container -->
-
-        <div class="category-container">
+        <section class="category-container">
             <div class="row row-1">
                 <div>Popular Category</div>
                 <div><img src="icons/more.svg" alt=""></div>
@@ -197,59 +228,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!------------------------------------>
-
-
-        <!--Platform summary -->
-        <div class="summary-platform">
-            <div class="title">
-                <div class="text">Platform Summary</div>
-                <div class="more-icon"><i class="fa-solid fa-ellipsis"></i></div>
-            </div>
-
-            <img src="icons/DataGlossary_Icons_Pie Chart.jpg" width="120" alt="">
-            <div class="summary-row row1">
-                <div class="item1">
-                    <div class="com-course">256,850</div>
-                    <div class="com-course-sub">Course Completed</div>
-                </div>
-                <div class="item2">+5,723</div>
-                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
-            <div class="summary-row row2">
-                <div class="item1">
-                    <div class="com-course">13,072</div>
-                    <div class="com-course-sub">Student Approved</div>
-                </div>
-                <div class="item2">+894</div>
-                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
-            <div class="summary-row row3">
-                <div class="item1">
-                    <div class="com-course">1,574</div>
-                    <div class="com-course-sub">Teacher Licsenced</div>
-                </div>
-                <div class="item2">+375</div>
-                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
-            <div class="summary-row row4">
-                <div class="item1">
-                    <div class="com-course">200</div>
-                    <div class="com-course-sub">Course Added</div>
-                </div>
-                <div class="item2">+50</div>
-                <div class="item-icon"><i class="fa-solid fa-chevron-right"></i></div>
-            </div>
-        </div>
-        <!------------------------->
-
-
-
-
-        <!--Recent Students -->
-
-        <div class="container">
+        </section>
+        <section class="container">
             <div class="row row-1">
                 <div>Recent Students</div>
                 <div><img src="icons/more.svg" alt=""></div>
@@ -302,10 +282,9 @@
                 <div class="course">Course Two</div>
                 <div class="price">$123</div>
                 <div class="date">5/18/2024</div>
-
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
 </body>
 
