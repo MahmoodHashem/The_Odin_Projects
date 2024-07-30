@@ -23,6 +23,8 @@ const bookLists = document.querySelector(".book-lists");
 const lastChild = document.querySelector(".add-book");
 
 
+
+
 // This array is for storing the books
 let itemArr = [];
 
@@ -31,29 +33,37 @@ openModal.addEventListener('click', () => {
     title.value = "";
     author.value = "";
     pages.value = "";
+    modal.style.animationName = 'showModal'
     modal.showModal();
 
 });
 
 addbtn.addEventListener("click", () => {
     if (title.value !== "" && author.value !== "" && pages.value !== "") {
+        
         const state = getSelectedRadioValue();
         const book = new Book(title.value, author.value, pages.value, state === '1' ? true : false);
+    
         itemArr.push(createItem(book.title, book.author, book.pages, book.state ? "Read" : "Unread"));
-
 
         /* This is iterating over each item in the `itemArr` array and inserting each item
         into the `bookLists` element before the `lastChild` element. This means that for each item in
         the `itemArr`, it is being added to the list of books displayed on the webpage before the
         "Add Book" button. */
+      
         itemArr.forEach(item => {
             bookLists.insertBefore(item, lastChild);
         })
+
     }
 })
 
 cancel.addEventListener('click', () => {
-    modal.close();
+
+    modal.style.animationName = 'closeModal'
+       setTimeout(() => {
+        modal.close()
+       }, 690);
 
 });
 
