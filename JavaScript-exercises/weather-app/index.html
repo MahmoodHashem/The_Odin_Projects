@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/4918651d8f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+
+    <nav class="nav">
+        <ul class="nav__items">
+            <li class="toggle">
+                <div class="checkbox-con">
+                    <input id="checkbox" type="checkbox">
+                </div>
+            </li>
+            <li class="search-bar">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <form action="#">
+                    <input type="text" required data-city>
+                </form>
+
+            </li>
+            <li>
+                <div class="current-location">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    Current Location
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="city">
+            <h2 class="city__name">Herat</h2>
+            <h3 class="city__current-time">09:03 <br> AM</h3>
+            <p class="city__current-date">Thursday, 6 June</p>
+        </section>
+
+        <section class="current-weather">
+            <div class="current-weather__temp">
+                <h2 class="current-weather__temp__temp-degree" data-current-temp>
+                    34<sup>&deg;C</sup>
+                    <div class="current-weather__temp__feel">Feels Like: 22&deg;C</div>
+                </h2>
+                <div class="current-weather__temp__sunrise">
+                    <img src="./images/sunrise.svg" alt="sunrise">
+                    <div>
+                        <h5>Sunrise</h5>
+                        <h6>06:37AM</h6>
+                    </div>
+
+                </div>
+                <div class="current-weather__temp__sunset">
+                    <img src="./images/sunset.svg" alt="sunset">
+                    <div>
+                        <h5>Sunset</h5>
+                        <h6>07:37PM</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="current-weather__condition">
+                <img src="./images/sunny.svg" alt="sunny">
+                <h3>Sunny</h3>
+            </div>
+            <div class="current-weather__details">
+                <div class="current-weather__details__humidity">
+                    <img src="./images/humidity.svg" alt="humidity">
+                    <h5 class="current-weather__details__value">41%</h5>
+                    <p class="current-weather__details__name">Humidity</p>
+                </div>
+                <div class="current-weather__details__wind-speed">
+                    <img src="./images/wind.svg" alt="humidity">
+                    <h5 class="current-weather__details__value">2 km/h</h5>
+                    <p class="current-weather__details__name">Speed</p>
+                </div>
+                <div class="current-weather__details__presure">
+                    <img src="./images/pressure.svg" alt="humidity">
+                    <h5 class="current-weather__details__value">997hpa</h5>
+                    <p class="current-weather__details__name">Pressure</p>
+                </div>
+                <div class="current-weather__details__uv">
+                    <img src="./images/uv.svg" alt="humidity">
+                    <h5 class="current-weather__details__value">8</h5>
+                    <p class="current-weather__details__name">UV Index</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h2>5 Days Forecast</h2>
+            <div class="forecast__row">
+                <img src="./images/cloudy.png" alt="">
+                <p>20<sup>&deg;C</sup></p>
+                <p>Friday, 1 Sep</p>
+            </div>
+            <div class="forecast__row">
+                <img src="./images/sunny.svg" alt="">
+                <p>20<sup>&deg;C</sup></p>
+                <p>Friday, 1 Sep</p>
+            </div>
+            <div class="forecast__row">
+                <img src="./images/half-cloudy.png" alt="">
+                <p>20<sup>&deg;C</sup></p>
+                <p>Friday, 1 Sep</p>
+            </div>
+            <div class="forecast__row">
+                <img src="./images/rainny.png" alt="">
+                <p>20<sup>&deg;C</sup></p>
+                <p>Friday, 1 Sep</p>
+            </div>
+            <div class="forecast__row">
+                <img src="./images/cloudy.png" alt="">
+                <p>20<sup>&deg;C</sup></p>
+                <p>Friday, 1 Sep</p>
+            </div>
+        </section>
+
+        <section class="hourly">
+            <h2>Hourly Forecast</h2>
+            <div class="hourly__cards">
+                <div class="hourly__card ">
+                    <h3>12:00</h3>
+                    <img src="./images/sunny.svg" alt="">
+                    <h4>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h4>3 Km/h</h4>
+                </div>
+                <div class="hourly__card">
+                    <h3>15:00</h3>
+                    <img src="./images/sunny.svg" alt="">
+                    <h4>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h4>3 Km/h</h4>
+                </div>
+                <div class="hourly__card">
+                    <h3>18:00</h3>
+                    <img src="./images/sunny.svg" alt="">
+                    <h4>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h4>3 Km/h</h4>
+                </div>
+                <div class="hourly__card">
+                    <h3>21:00</h3>
+                    <img src="./images/sunny.svg" alt="">
+                    <h4>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h4>3 Km/h</h4>
+                </div>
+                <div class="hourly__card">
+                    <h3>00:00</h3>
+                    <img src="./images/sunny.svg" alt="">
+                    <h4>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow"></i>
+                    <h4>3 Km/h</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+</body>
+
+</html>
