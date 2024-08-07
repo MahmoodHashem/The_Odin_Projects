@@ -136,7 +136,7 @@ main{
 }
 
 .city__name{
-    font-size: 3rem;
+    font-size: 7rem;
     padding: 0 0 1rem 0;
 }
 
@@ -179,7 +179,7 @@ main{
 }
 
 .current-weather__temp__temp-degree{
-    font-size: 10rem;
+    font-size: 7rem;
     position: relative;
 }
 
@@ -188,7 +188,7 @@ main{
 }
 
 .current-weather__temp__feel{
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     bottom: 0;
 }
@@ -303,6 +303,10 @@ width: 50px;
  text-align: center;
  border-radius: 1.2rem;
  padding: 1rem;
+}
+
+.hourly__card:last-child{
+  background: linear-gradient(to bottom, #443D64, #6582C6);
 }
 
 .hourly__card h3{

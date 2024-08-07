@@ -30,7 +30,7 @@
 
             </li>
             <li>
-                <div class="current-location">
+                <div class="current-location" data-current-location>
                     <i class="fa-solid fa-location-crosshairs"></i>
                     Current Location
                 </div>
@@ -41,9 +41,9 @@
     <main>
 
         <section class="city">
-            <h2 class="city__name">Herat</h2>
-            <h3 class="city__current-time">09:03 <br> AM</h3>
-            <p class="city__current-date">Thursday, 6 June</p>
+            <h2 class="city__name" data-city-toShow>Herat</h2>
+            <h3 class="city__current-time" data-time>09:03 <br> AM</h3>
+            <p class="city__current-date" data-date>Thursday, 6 June</p>
         </section>
 
         <section class="current-weather">
@@ -56,7 +56,7 @@
                     <img src="./images/sunrise.svg" alt="sunrise">
                     <div>
                         <h5>Sunrise</h5>
-                        <h6>06:37AM</h6>
+                        <h6 data-sunrise-time>06:37AM</h6>
                     </div>
 
                 </div>
@@ -64,34 +64,34 @@
                     <img src="./images/sunset.svg" alt="sunset">
                     <div>
                         <h5>Sunset</h5>
-                        <h6>07:37PM</h6>
+                        <h6 data-sunset-time>07:37PM</h6>
                     </div>
 
                 </div>
             </div>
             <div class="current-weather__condition">
-                <img src="./images/sunny.svg" alt="sunny">
+                <img src="./images/sunny.svg" alt="sunny" data-weather-icon>
                 <h3>Sunny</h3>
             </div>
             <div class="current-weather__details">
                 <div class="current-weather__details__humidity">
                     <img src="./images/humidity.svg" alt="humidity">
-                    <h5 class="current-weather__details__value">41%</h5>
+                    <h5 class="current-weather__details__value" data-humidity>41%</h5>
                     <p class="current-weather__details__name">Humidity</p>
                 </div>
                 <div class="current-weather__details__wind-speed">
                     <img src="./images/wind.svg" alt="humidity">
-                    <h5 class="current-weather__details__value">2 km/h</h5>
+                    <h5 class="current-weather__details__value" data-wind>2 km/h</h5>
                     <p class="current-weather__details__name">Speed</p>
                 </div>
                 <div class="current-weather__details__presure">
                     <img src="./images/pressure.svg" alt="humidity">
-                    <h5 class="current-weather__details__value">997hpa</h5>
+                    <h5 class="current-weather__details__value" data-pressure>997hpa</h5>
                     <p class="current-weather__details__name">Pressure</p>
                 </div>
                 <div class="current-weather__details__uv">
                     <img src="./images/uv.svg" alt="humidity">
-                    <h5 class="current-weather__details__value">8</h5>
+                    <h5 class="current-weather__details__value" data-uv>8</h5>
                     <p class="current-weather__details__name">UV Index</p>
                 </div>
             </div>
