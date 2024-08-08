@@ -7,7 +7,7 @@
     <title>Weather App</title>
     <script src="https://kit.fontawesome.com/4918651d8f.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <script src="./script.js" defer></script>
 </head>
 
@@ -100,29 +100,29 @@
         <section class="forecast">
             <h2>5 Days Forecast</h2>
             <div class="forecast__row">
-                <img src="./images/cloudy.png" alt="">
-                <p>20<sup>&deg;C</sup></p>
-                <p>Friday, 1 Sep</p>
+                <img src="./images/cloudy.png" alt="" data-forecast-img>
+                <p data-forecast-temp>20&deg;C</p>
+                <p data-forecast-date>Friday, 1 Sep</p>
             </div>
             <div class="forecast__row">
-                <img src="./images/sunny.svg" alt="">
-                <p>20<sup>&deg;C</sup></p>
-                <p>Friday, 1 Sep</p>
+                <img src="./images/cloudy.png" alt="" data-forecast-img>
+                <p data-forecast-temp>20&deg;C</p>
+                <p data-forecast-date>Friday, 1 Sep</p>
             </div>
             <div class="forecast__row">
-                <img src="./images/half-cloudy.png" alt="">
-                <p>20<sup>&deg;C</sup></p>
-                <p>Friday, 1 Sep</p>
+                <img src="./images/cloudy.png" alt="" data-forecast-img>
+                <p data-forecast-temp>20&deg;C</p>
+                <p data-forecast-date>Friday, 1 Sep</p>
             </div>
             <div class="forecast__row">
-                <img src="./images/rainny.png" alt="">
-                <p>20<sup>&deg;C</sup></p>
-                <p>Friday, 1 Sep</p>
+                <img src="./images/cloudy.png" alt="" data-forecast-img>
+                <p data-forecast-temp>20&deg;C</p>
+                <p data-forecast-date>Friday, 1 Sep</p>
             </div>
             <div class="forecast__row">
-                <img src="./images/cloudy.png" alt="">
-                <p>20<sup>&deg;C</sup></p>
-                <p>Friday, 1 Sep</p>
+                <img src="./images/cloudy.png" alt="" data-forecast-img>
+                <p data-forecast-temp>20&deg;C</p>
+                <p data-forecast-date>Friday, 1 Sep</p>
             </div>
         </section>
 
@@ -131,38 +131,38 @@
             <div class="hourly__cards">
                 <div class="hourly__card ">
                     <h3>12:00</h3>
-                    <img src="./images/sunny.svg" alt="">
-                    <h4>25 &deg;C</h4>
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <h4>3 Km/h</h4>
+                    <img src="./images/sunny.svg" alt="" data-hourly-icon>
+                    <h4 data-hourly-temp>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow" data-hourly-winddir></i>
+                    <h4 data-hourly-windspeed>3 Km/h</h4>
                 </div>
                 <div class="hourly__card">
                     <h3>15:00</h3>
-                    <img src="./images/sunny.svg" alt="">
-                    <h4>25 &deg;C</h4>
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <h4>3 Km/h</h4>
+                    <img src="./images/sunny.svg" alt="" data-hourly-icon>
+                    <h4 data-hourly-temp>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow" data-hourly-winddir></i>
+                    <h4 data-hourly-windspeed>3 Km/h</h4>
                 </div>
                 <div class="hourly__card">
                     <h3>18:00</h3>
-                    <img src="./images/sunny.svg" alt="">
-                    <h4>25 &deg;C</h4>
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <h4>3 Km/h</h4>
+                    <img src="./images/sunny.svg" alt="" data-hourly-icon>
+                    <h4 data-hourly-temp>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow" data-hourly-winddir></i>
+                    <h4 data-hourly-windspeed>3 Km/h</h4>
                 </div>
-                <div class="hourly__card">
+                <div class="hourly__card night">
                     <h3>21:00</h3>
-                    <img src="./images/sunny.svg" alt="">
-                    <h4>25 &deg;C</h4>
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <h4>3 Km/h</h4>
+                    <img src="./images/moon.png" alt="" data-hourly-icon>
+                    <h4 data-hourly-temp>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow" data-hourly-winddir></i>
+                    <h4 data-hourly-windspeed>3 Km/h</h4>
                 </div>
-                <div class="hourly__card">
+                <div class="hourly__card night">
                     <h3>00:00</h3>
-                    <img src="./images/sunny.svg" alt="">
-                    <h4>25 &deg;C</h4>
-                    <i class="fa-solid fa-location-arrow"></i>
-                    <h4>3 Km/h</h4>
+                    <img src="./images/moon.png" alt="" data-hourly-icon>
+                    <h4 data-hourly-temp>25 &deg;C</h4>
+                    <i class="fa-solid fa-location-arrow" data-hourly-winddir></i>
+                    <h4 data-hourly-windspeed>3 Km/h</h4>
                 </div>
             </div>
         </section>
