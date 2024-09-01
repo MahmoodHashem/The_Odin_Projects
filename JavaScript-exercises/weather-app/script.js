@@ -41,10 +41,12 @@ form.addEventListener('submit', async (e) => {
 
   try {
     const data = await getWeather(input.value);
-    console.log(data);
+    // console.log(data);
     updateWeatherData(data);
   } catch (error) {
+
     console.error("Error fetching weather data: " + error.message);
+  
   }
 });
 
@@ -90,14 +92,14 @@ async function getCurrentUserPosition() {
   });
 }
 async function getWeather(location) {
-  if (!/[a-zA-Z]/.test(location)) {
-    console.log("Not valid");
-    return;
-  }
+
+
+  const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&key=VQGFHV4Y7T2NZFJ5AESYFQH7D&contentType=json`);
+  const status = response.status; 
 
   try {
-    const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&key=VQGFHV4Y7T2NZFJ5AESYFQH7D&contentType=json`);
     const data = await response.json();
+    // console.log(data.days[0].hours[0])
 
     const { currentConditions, address, days } = data;
     const { temp, feelslike, humidity, windspeed, winddir, pressure, uvindex, sunrise, sunset, conditions, datetime, icon } = currentConditions;
@@ -111,34 +113,33 @@ async function getWeather(location) {
     }
 
 
-    // const desiredHours = [12, 15, 18, 21, 0];
+    const desiredHours = [13, 15, 18, 21, 0];
+    let hours = data.days[0].hours; 
 
-    // desiredHours.forEach((hour, index) => {
-    //   const hourData = hours.find((item) => new Date(item.datetimeEpoch * 1000).getHours() === hour);
+    desiredHours.forEach((hour, index) => {
+      const hourData = hours.find((item) => new Date(item.datetimeEpoch * 1000).getHours() === hour);
     
-    //   if (hourData) {
-    //     console.log(hourData)
-    //     // hourlyImg[index].src = hourData.icon; // Set the icon image source
-    //     // hourlyTemp[index].textContent = `${hourData.temp}°C`; // Set the temperature
-    //     // hourlyWindSpeed[index].textContent = `${hourData.windspeed} m/s`; // Set the wind speed
-    //     // hourlyWindDir[index].textContent = hourData.winddir; // Set the wind direction
-    //   } else {
-    //     console.log(`No data found for hour ${hour}:00`);
-    //   }
-    // });
- 
-      
-
-    
-
-
+      if (hourData) {
+        // console.log(hourData)
+     
+        displayWeatherIcon(hourData.icon, hourlyImg[index]); // Set the icon image source
+        hourlyTemp[index].textContent = `${hourData.temp}°C`; // Set the temperature
+        hourlyWindSpeed[index].textContent = `${hourData.windspeed} m/s`; // Set the wind speed
+        hourlyWindDir[index].style.transform = `rotate(${hourData.winddir}deg)`; // Set the wind direction
+      } else {
+        console.log(`No data found for hour ${hour}:00`);
+      }
+    });
 
     return {
       data, temp, feelslike, humidity, windspeed, winddir, pressure, uvindex, sunrise, sunset, conditions, datetime, city: address, icon
     };
   } catch (error) {
-    console.log(error);
-    console.log("Something went wrong");
+    if(status === 400){
+      console.log("NOt found")
+    }
+    // console.log(error);
+    // console.log("Something went wrong");
   }
 }
 
