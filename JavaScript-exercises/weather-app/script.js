@@ -36,12 +36,29 @@ const hourlyWindSpeed = document.querySelectorAll("[data-hourly-windspeed]");
 const hourlyWindDir = document.querySelectorAll('[data-hourly-winddir]');
 
 
+const loader = document.querySelector(".loader"); 
+const error = document.querySelector('.error-box'); 
+
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
+  if(!navigator.onLine){
+    document.querySelector('main').style.display = 'none';
+    loader.style.display = 'none'; 
+    document.querySelector('body').style.height = '100vh'
+   error.style.display = 'block'; 
+   return; 
+  }
+
   try {
+     document.querySelector('main').style.display = 'none'
+     error.style.display = 'none'; 
+      document.querySelector('body').style.height = '100vh'
+    loader.style.display = 'block'; 
     const data = await getWeather(input.value);
-    // console.log(data);
+    loader.style.display = 'none'; 
+    document.querySelector('main').style.display = 'grid'
     updateWeatherData(data);
   } catch (error) {
 
@@ -51,13 +68,33 @@ form.addEventListener('submit', async (e) => {
 });
 
 
-getCurrentLocation.addEventListener('click', async function () {
+if(navigator.onLine){
+   error.style.display = 'none'
+  window.addEventListener('load', getCurrentLocationWeather); 
+}else{
+   document.querySelector('main').style.display = 'none';
+   loader.style.display = 'none'; 
+   document.querySelector('body').style.height = '100vh'
+
+  error.style.display = 'block'; 
+}
+
+getCurrentLocation.addEventListener('click', getCurrentLocationWeather);
+
+
+async function getCurrentLocationWeather(){
   if (navigator.geolocation) {
     try {
+      document.querySelector('main').style.display = 'none'
+      document.querySelector('body').style.height = '100vh'
       const position = await getCurrentUserPosition();
       const { latitude, longitude } = position.coords;
+     loader.style.display = 'block'; 
       const city = await getLocationFromCoordinates(latitude, longitude);
       const data = await getWeather(city);
+      loader.style.display = 'none'; 
+      document.querySelector('main').style.display = 'grid'; 
+      document.querySelector('body').style.height = '100%'
       updateWeatherData(data);
     } catch (error) {
       console.error("Error getting location or weather data: " + error.message);
@@ -65,11 +102,7 @@ getCurrentLocation.addEventListener('click', async function () {
   } else {
     console.error("Geolocation is not supported by this browser.");
   }
-});
-
-
-// render(); 
-
+}
 
 function updateWeatherData(data) {
   city.innerHTML = data.city.split(' ')[0];
@@ -92,14 +125,11 @@ async function getCurrentUserPosition() {
   });
 }
 async function getWeather(location) {
-
-
   const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?unitGroup=metric&key=VQGFHV4Y7T2NZFJ5AESYFQH7D&contentType=json`);
   const status = response.status; 
 
   try {
     const data = await response.json();
-    // console.log(data.days[0].hours[0])
 
     const { currentConditions, address, days } = data;
     const { temp, feelslike, humidity, windspeed, winddir, pressure, uvindex, sunrise, sunset, conditions, datetime, icon } = currentConditions;
@@ -135,11 +165,11 @@ async function getWeather(location) {
       data, temp, feelslike, humidity, windspeed, winddir, pressure, uvindex, sunrise, sunset, conditions, datetime, city: address, icon
     };
   } catch (error) {
+
     if(status === 400){
-      console.log("NOt found")
+      alert("Please enter a valid city")
     }
-    // console.log(error);
-    // console.log("Something went wrong");
+
   }
 }
 
@@ -174,21 +204,21 @@ function getCurrentDateString() {
 
 
 
-async function render() {
-  if (navigator.geolocation) {
-    try {
-      const position = await getCurrentUserPosition();
-      const { latitude, longitude } = position.coords;
-      const city = await getLocationFromCoordinates(latitude, longitude);
-      const data = await getWeather(city);
-      updateWeatherData(data);
-    } catch (error) {
-      console.error("Error getting location or weather data: " + error.message);
-    }
-  } else {
-    console.error("Geolocation is not supported by this browser.");
-  }
-}
+// async function render() {
+//   if (navigator.geolocation) {
+//     try {
+//       const position = await getCurrentUserPosition();
+//       const { latitude, longitude } = position.coords;
+//       const city = await getLocationFromCoordinates(latitude, longitude);
+//       const data = await getWeather(city);
+//       updateWeatherData(data);
+//     } catch (error) {
+//       console.error("Error getting location or weather data: " + error.message);
+//     }
+//   } else {
+//     console.error("Geolocation is not supported by this browser.");
+//   }
+// }
 
 
 
