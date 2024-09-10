@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Tree Visualization</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer type="module" src="js/main.js" > </script>
+</head>
+
+<body>
+    <h1>Binary Search Tree Visualization</h1>
+    <main>
+        <div class="inputs">
+            <form action="#">
+                <input type="number" required id="numberInput" placeholder="Enter a number" />
+                
+            </form>
+
+            <button id="add">Add</button>
+            <button id="remove">Remove</button>
+            <button id="clear">Clear All</button>
+            <button id="balanceButton">Balance Tree</button>
+            <button id="inOrderButton">In-Order Traversal</button>
+            <button id="preOrderButton">Pre-Order Traversal</button>
+            <button id="postOrderButton">Post-Order Traversal</button>
+            <button id="postOrderButton">Level-Order Traversal</button>
+            <button id="isBalance">Is Balanced</button>
+            <button id="maxHeight">Max Height</button>
+            <button id="minHeight">Min Height</button>
+           
+        </div>
+        <div class="tree">
+            <h2>Tree Structure:</h2>
+            <pre id="treeDisplay"></pre>
+        </div>
+        <div class="travers">
+            <h2>Traversals:</h2>
+            <p id="traversalDisplay"></p>
+        </div>
+    </main>
+
+  
+
+</body>
+
+</html>
