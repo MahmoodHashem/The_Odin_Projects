@@ -1,78 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 
 @media screen and (max-width: 700px) {
-    main{
-        flex-direction: column;
-    }
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tree{
+    order: -1;
+  }
+
+  .travers{
+    order: -1;
+  }
+
+
 }
 
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  backdrop-filter: brightness(40%);
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Coming Soon", sans-serif;
+  color: white;
 }
 
 main {
-    text-align: center;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  gap: 2rem; 
+  justify-content: space-around;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+
 }
 
-h2{
-    margin: 1.2rem;
+h2 {
+  margin: 1.2rem;
+  text-align: center;
+  font-family: "Coming Soon", sans-serif;
 }
 
 input {
-    margin: 1.2rem;
-    padding: 8px;
-    width: 200px;
+    margin: 1.2rem 0;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none; 
+    font-family: inherit;
 }
 
 button {
-    padding: 8px 12px;
-    cursor: pointer;
-    margin: 5px;
-    border: none;
-    background-color: teal;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: "Roboto";
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  background-color: #01282A;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 10px;
+  box-shadow: inset -1px 2px 4px 0px #91a51f;
+  
 }
 
 p {
-    text-align: justify;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    font-family: monospace;
-    font-size: 20px;
-    
-
+  text-align: justify;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family:  monospace;
+  font-size: 20px;
 }
 
+main > * {
+  flex: 1;
 
-
-main>* {
-    flex: 1;
 }
 
 .inputs {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 250px;
+
 }
 
 .tree {
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "Source Code Pro", sans-serif; 
+  font-weight: bold;
+ align-items: center;
 }

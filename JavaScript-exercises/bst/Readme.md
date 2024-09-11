@@ -5,6 +5,7 @@ Welcome to the Binary Search Tree (BST) Visualization project! This application 
 ## Table of Contents
 
 - [Features](#features)
+- [Link](#links)
 - [Visual Representation](#visual-representation)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
@@ -26,6 +27,10 @@ Welcome to the Binary Search Tree (BST) Visualization project! This application 
   - Remove nodes and observe the changes.
   - Perform and visualize different tree traversals.
   - Display maximum and minimum heights of the tree.
+
+## Link
+
+[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/bst/index.html)
 
 ## Usage
 

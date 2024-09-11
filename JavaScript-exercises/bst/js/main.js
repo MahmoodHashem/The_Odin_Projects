@@ -17,6 +17,9 @@ const postOrderButton = document.getElementById('postOrderButton');
 const remove = document.getElementById('remove');
 const maxH = document.getElementById('maxHeight');
 const minH = document.getElementById('minHeight');
+const clearAll = document.getElementById('clear'); 
+
+const levelOrder = document.querySelector('#levelOrderButton'); 
 
 
 const defaultArray = [2, 5, 3, 7, 10, 12, 25, 30, 29, 45];
@@ -55,6 +58,11 @@ remove.addEventListener('click', () => {
     bst.remove(value)
 })
 
+
+clearAll.addEventListener('click', ()=>{
+    bst.clearAll()
+})
+
 balanceButton.addEventListener('click', () => {
     bst.balance();
 });
@@ -73,6 +81,14 @@ postOrderButton.addEventListener('click', () => {
     const postOrderResult = bst.postOrder();
     document.getElementById('traversalDisplay').textContent = `Post-Order: ${postOrderResult}`;
 });
+
+
+levelOrder.addEventListener('click', ()=>{
+    let levelOrderResult = bst.levelOrderTraversal(); 
+    document.getElementById('traversalDisplay').textContent = `Level-Order: ${levelOrderResult}`;
+
+} 
+)
 
 
 isBalance.addEventListener('click', () => {

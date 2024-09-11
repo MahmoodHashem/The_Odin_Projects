@@ -77,9 +77,13 @@ export class BST {
     }
 
 
-    clearAll(){
-        //TODO
+    clearAll() {
+        this.root = null;
+
+        this.prettyPrint()
     }
+
+
 
 
     prettyPrint() {
@@ -92,7 +96,6 @@ export class BST {
             return "";
         }
         let result = "";
-        console.log(prefix)
         if (node.right !== null) {
             result += this._prettyPrint(node.right, `${prefix}${isLeft ? "│   " : "    "}`, false);
         }
@@ -139,8 +142,35 @@ export class BST {
         return this._postOrderTraversal(this.root).join(", ");
     }
 
-    _levelOrder(callback) {
-        //TODO
+    levelOrderTraversal() {
+        if (!this.root) {
+            return [];
+        }
+
+        let result = [];
+        let queue = [this.root];
+
+        while (queue.length > 0) {
+            let currentLevel = [];
+            let levelSize = queue.length;
+
+            for (let i = 0; i < levelSize; i++) {
+                let currentNode = queue.shift();
+                currentLevel.push(currentNode.data);
+
+                if (currentNode.left) {
+                    queue.push(currentNode.left);
+                }
+
+                if (currentNode.right) {
+                    queue.push(currentNode.right);
+                }
+            }
+
+            result.push(currentLevel);
+        }
+
+        return result.join(', ');
     }
 
     _preOrderTraversal(node, arr = []) {
