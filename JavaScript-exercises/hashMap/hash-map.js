@@ -109,19 +109,21 @@ class HashMap {
     }
 
     visualize() {
+
         const hashmapDiv = document.getElementById('hashmap');
         hashmapDiv.innerHTML = ''; // Clear previous visualization
-
+    
+      
         this.buckets.forEach((bucket, index) => {
             const bucketDiv = document.createElement('div');
             bucketDiv.className = 'bucket';
-            let entries = 'Bucket ' + index + ': ';
+            let entries = 'Bucket ' + index + '\t\t';
             let current = bucket;
             if (!current) {
                 entries += 'Empty';
             } else {
                 while (current) {
-                    entries += `${current.key}: ${current.value} `;
+                    entries += ` \t => {${current.key}: ${current.value}} `;
                     current = current.next;
                 }
             }
@@ -132,6 +134,9 @@ class HashMap {
 }
 
 const hashmap = new HashMap();
+
+
+alert("  Please use this visualization on a large screen for the best experience!")
 
 function addToHashMap() {
     const key = document.getElementById('key').value;
@@ -150,12 +155,12 @@ function addToHashMap() {
 function getFromHashMap() {
     const key = document.getElementById('key').value;
     const value = hashmap.get(key);
-    const outputDiv = document.getElementById('output');
+    
 
     if (value !== null) {
-        outputDiv.textContent = `Value for "${key}": ${value}`;
+        alert(`Value for "${key}": ${value}`);
     } else {
-        outputDiv.textContent = `Key "${key}" not found.`;
+        alert(`Key "${key}" not found.`)
     }
 }
 
@@ -164,13 +169,13 @@ function removeFromHashMap() {
     const outputDiv = document.getElementById('output');
 
     if (hashmap.remove(key)) {
-        outputDiv.textContent = `Key "${key}" removed.`;
+        alert(`Key "${key}" removed.`)
     } else {
-        outputDiv.textContent = `Key "${key}" not found.`;
+        alert(`Key "${key}" not found.`)
     }
 }
 
 function clearHashMap() {
     hashmap.clear();
-    document.getElementById('output').textContent = 'All entries cleared.';
+    
 }
