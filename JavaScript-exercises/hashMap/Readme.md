@@ -6,6 +6,9 @@ This project is a visual representation of a HashMap data structure, implemented
 
 [Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/hashMap/index.html)
 
+## Screenshot
+![](./images/screenhot.png)
+
 ## Features
 
 - **HashMap Class**: A custom implementation of a HashMap with methods including:

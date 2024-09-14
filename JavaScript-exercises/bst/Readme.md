@@ -10,6 +10,10 @@ Welcome to the Binary Search Tree (BST) Visualization project! This application 
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 
+## Screenshot
+
+![](./images/screenshot.png)
+
 ## Features
 
 - **Node Class**: Represents each node in the BST with properties for its value and references to left and right child nodes.
