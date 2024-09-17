@@ -1,0 +1,13 @@
+const analyzeArray = (arr) => {
+    const average = arr.reduce((sum, num) => sum + num, 0) / arr.length;
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    return {
+        average: average,
+        min: min,
+        max: max,
+        length: arr.length,
+    };
+};
+
+module.exports = analyzeArray; 
