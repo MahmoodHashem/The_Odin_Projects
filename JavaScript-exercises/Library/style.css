@@ -1,254 +1,256 @@
 :root {
-    --main-font: "Signika Negative";
-    --card-width: 200px;
-    --card-height: 250px;
+  --main-font: "Signika Negative";
+  --card-width: 20rem;
+  --card-height: 25rem;
 }
 
 * {
-    font-family: var(--main-font);
+  font-family: var(--main-font);
 }
 
-
-@media screen and (max-width: 600px) {
-
-    .add-book {
-        width: 50px; 
-        height: 50px;
-        font-size: 25px;
-        border-radius: 100%;
-        background-color: white;
-        box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, 0.516);
-        position: fixed; 
-        bottom: 0; ;
-        right: 0;
-        display: grid;
-        font-family: "signika Negative";
-        font-weight: bold;
-        margin: 20px;
-    }
-
-    .modal{
-        max-width: 300px;
-    }
-
-    .book-lists {
-        
-        justify-content: center;
-    }
-    
+html {
+    font-size: 10px;
 }
 
-@media screen and (min-width: 601px) {
-    .add-book {
-        width: var(--card-width);
-        height: var(--card-height);
-        font-size: 100px;
-        background-color: #e1f7f58b;
-        outline: 2px dashed white;
-        display: grid;
-        font-family: "signika Negative";
-        font-weight: bold;
-        margin: 20px;
-    }
-
-    .modal{
-        width: calc(var(--card-width) + 80px);
-    }
-
-    .book-lists {
-        align-items: start;
-    }
-    .item{
-        width: var(--card-width);
-        height: var(--card-height);
-    }
-
-    .btns{
-        width: var(--card-width);
-    }
-}
-
-
-.add-book::after {
-    content: "+";
-    align-self: center;
-    justify-self: center;
-    color: rgb(136, 136, 136);
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #9AC8CD;
-}
-
-.nav-bar {
-    background-color: #0E46A3;
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.143);
-    font-family: var(--main-font), serif;
-    text-align: center;
-}
-
-.heading {
-    padding: 0;
-    margin: 0;
-    color: white;
-    font-size: 40px;
-}
-
-
-.item {
- 
-    background-color: #1679AB;
-    box-shadow: inset 4px 0px 7px 2px #0E46A3;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: var(--main-font);
-    font-size: 20px;
-    color: white;
-    border-radius: 10px;
-}
-
-.item .book-name {
-    text-transform: capitalize;
-}
-
-
-
-
-
-.add-book:hover {
-    cursor: pointer;
-    background-color: #e1f7f5e0;
-
-}
 
 .book-lists {
     display: grid;
     grid-template-columns: repeat(auto-fit, var(--card-width));
-    gap: 10px;
+    gap: 1rem;
+  }
+
+@media screen and (min-width: 601px) {
+  .add-book {
+    width: var(--card-width);
+    height: var(--card-height);
+    font-size: 10rem;
+    background-color: #e1f7f58b;
+    outline: 2px dashed white;
+    display: grid;
+    font-family: "signika Negative";
+    font-weight: bold;
+    margin: 2rem;
+  }
+
+  .modal {
+    width: calc(var(--card-width) + 8rem);
+  }
+
+  .book-lists {
+    align-items: start;
+  }
+  .item {
+    width: var(--card-width);
+    height: 100%;
+  }
+
+  .btns {
+    width: var(--card-width);
+  }
 }
 
+
+@media screen and (max-width: 600px) {
+    .add-book {
+      width: 5rem;
+      height: 5rem;
+      font-size: 2.5rem;
+      border-radius: 100%;
+      background-color: white;
+      box-shadow: -2px 5px 10px 5px rgba(0, 0, 0, 0.516);
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      display: grid;
+      font-family: "signika Negative";
+      font-weight: bold;
+      margin: 2rem;
+    }
+  
+    .modal {
+      width: 100%;
+      max-width: 40rem;
+    }
+  
+    .book-lists {
+     grid-template-columns: auto;
+    }
+  }
+
+.add-book::after {
+  content: "+";
+  align-self: center;
+  justify-self: center;
+  color: rgb(136, 136, 136);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #9ac8cd;
+}
+
+.nav-bar {
+  background-color: #0e46a3;
+  position: sticky;
+  top: 0;
+  padding: 1.5rem;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.143);
+  font-family: var(--main-font), serif;
+  text-align: center;
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 4rem;
+}
+
+.item {
+  background-color: #1679ab;
+  box-shadow: inset 4px 0px 7px 2px #0e46a3;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: 2rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.item .book-name {
+  text-transform: capitalize;
+}
+
+.add-book:hover {
+  cursor: pointer;
+  background-color: #e1f7f5e0;
+}
+
+
+
 .books {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, var(--card-width));
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, var(--card-width));
+  grid-auto-rows: max-content;
+  gap: 1rem;
 }
 
 .author {
-    color: #FFC55A;
-    text-transform: capitalize;
+  color: #ffc55a;
+  text-transform: capitalize;
 }
 
 .state {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
-
 .item-wrapper {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 2rem;
+  height: 100%;
 }
 
 .btns {
-    display: flex;
-    justify-content: space-around;
-  
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 1rem;
 }
 
-.modal .btns{
-    width: 100%;
+.modal .btns {
+  width: 100%;
+}
+
+.modal input{
+    font-size: 1.2rem;
 }
 
 .btn {
-    padding: 8px 15px;
-    width: calc(var(--card-width) / 3);
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    border-radius: 6px;
+  padding: 0.8rem 1.5rem;
+  width: calc(var(--card-width) / 3);
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  border-radius: 0.6rem;
+  font-size: 1.5rem;
 }
 
 .btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .modal {
-    border: none;
-   
+  border: none;
 }
 
-
-.modal.animate{
-    transform: translateY(-100%);
-    opacity: 0;
-    animation: apear 0.7s ease-in-out forwards;
+.modal.animate {
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: apear 0.7s ease-in-out forwards;
 }
 
-.modal{
-    animation-duration: 0.7s;
-    
+.modal {
+  animation-duration: 0.7s;
 }
-
 
 @keyframes showModal {
-    from{
-        opacity: 0; 
-        transform: translateY(-300px);
-    } 
-    to{
-        opacity: 1;
-        transform: translateY(0);
-    }               
+  from {
+    opacity: 0;
+    transform: translateY(-30rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes closeModal {
-    from{
-        opacity: 1;
-        transform: translateY(0);
-    } to{
-        opacity: 0;
-        transform: translateY(-300px);
-    }
-    
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30rem);
+  }
 }
 
 .modal::backdrop {
-    backdrop-filter: blur(10px);
+  backdrop-filter: blur(1rem);
 }
 
-
 .modal h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 1.5rem 1rem;
+}
+
+label{
+    font-size: 1.3rem;
 }
 
 .input input {
-    padding: 10px;
-    border: 1px solid #577B8D;
+  padding: 1rem;
+  border: 1px solid #577b8d;
 }
 
-fieldset{
-   margin: 15px 10px;
+fieldset {
+  margin: 1.5rem 1rem;
 }
 
-
-.radios{
-    display: flex;
-    justify-content: space-around;
+.radios {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
 }
