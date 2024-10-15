@@ -26,6 +26,7 @@ body {
 #board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px;
     gap: 20px;
     background-color: #1C2F95;
     justify-content: center;
