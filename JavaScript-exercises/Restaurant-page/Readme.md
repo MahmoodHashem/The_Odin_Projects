@@ -6,6 +6,9 @@ This is a project for The Odin Project's JavaScript curriculum, focusing on the 
 
 The Restaurant Home Page project is a web application that showcases a restaurant's information, menu, and contact details. The project is built using JavaScript modules and Webpack for bundling and optimization.
 
+## Screenshot
+![](./screenshot.png)
+
 ## Features
 
 * **Home Page** : Displays the restaurant's name, and a brief description.

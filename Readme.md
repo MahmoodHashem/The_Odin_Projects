@@ -9,55 +9,99 @@ This repository contains my personal projects and assignments completed through 
 
 Here are some of the projects I've completed as part of The Odin Project curriculum:
 
-### Project 1: Rock Paper Scissors
+### Rock Paper Scissors
+
+    ![](./JavaScript-exercises/rock-paper-scissors/screenshot.png)
 
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[Live Site](./JavaScript-exercises/Rock_paper)**
-- **[Reop](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Rock_paper)**
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/rock-paper-scissors/index.hmlt)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/rock-paper-scissors)**
 
-### Project 2: Calculator
+### Calculator
 
-- **Description**: A simple calculator that performs basic arithmetic operations.
+    ![](./JavaScript-exercises/calculator/screenshot.png)
+
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Calculator/index.html)**
-- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Calculator)**
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/calculator/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/calculator)**
 
-### Project 3: Form Validation
+### Form Validation
 
-- **Description**: Form validation project
+    ![](./JavaScript-exercises/form/screenshot.png)
+
 - **Technologies Used**: HTML, CSS, JavaScript
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/form/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/form)**
 
-### Project 4: Dashboard
+### Dashboard
+
+![](./JavaScript-exercises/Course-Dashbord/screenshot.png)
 
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Course-Dashbord/index.html)**
-- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Course-Dashbord)**
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/course-dashbord/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/course-dashbord)**
 
-### Project 5: Library
+### Library
+
+![](./JavaScript-exercises/library/images/image.png)
 
 - **Technologies Used**: HTML, CSS, JavaScript
-- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Library/index.html)**
-- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Library)**
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/library/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/library)**
 
-### Project 6: Tic Tac Toe
+### Tic Tac Toe
+
+![](./JavaScript-exercises/tictactoe/screenshot.png)
 
 - **Technologies Used**: HTML, CSS, JavaScript
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/tictactoe/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/tictactoe)**
 
-### Project 7: Restaurant page
+### Restaurant page
+
+    ![screenshot](./JavaScript-exercises/Restaurant-page/screenshot.png)
 
 - **Technologies Used**: HTML, CSS, JavaScript, Webpack
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/Restaurant-page/dist/index.html)**
-- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Restaurtant-page)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/Restaurant-page)**
 
-### Project 8: Todo List
+### Todo List
+
+![todolist-screenshot](./JavaScript-exercises/todo-app/images/screenshot.png)
 
 - **Technologies Used**: HTML, CSS, JavaScript
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/todo-app/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/todo-app)**
+
+### Weather App
+
+![weatherapp-screenshot](./JavaScript-exercises/weather-app/images/Screenshot.jpeg)
+
+- **Technologies Used**: HTML, CSS, JavaScript
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/weather-app/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/weather-app)**
+
+### Hashmap Data Structure
+![hashmap-screenshot](./JavaScript-exercises/hashMap/images/screenhot.png)
+
+- **Technologies Used**: HTML, CSS, JavaScript
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/hashMap/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/hashMap)**
+
+### BST (Binary Search Tree)
+![hashmap-screenshot](./JavaScript-exercises/bst/images/screenshot.png)
+
+- **Technologies Used**: HTML, CSS, JavaScript
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/bst/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/bst)**
+
+### Knights Travails
+![hashmap-screenshot](./JavaScript-exercises/knight-travails/img/screenshot.png)
+
+- **Technologies Used**: HTML, CSS, JavaScript
+- **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/knight-travails/index.html)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/knight-travails)**
+
 
 ### Contributing
 
