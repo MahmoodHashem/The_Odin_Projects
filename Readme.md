@@ -102,6 +102,13 @@ Here are some of the projects I've completed as part of The Odin Project curricu
 - **[Live Site](https://mahmoodhashem.github.io/The_Odin_Projects/JavaScript-exercises/knight-travails/index.html)**
 - **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/JavaScript-exercises/knight-travails)**
 
+### CV Applicaion
+![hashmap-screenshot](./react-projects/dev-cv-maker/public/screenshot.png)
+
+- **Technologies Used**: HTML, CSS, JavaScript, React
+- **[Live Site](https://dev-cv-maker.vercel.app/)**
+- **[Repo](https://github.com/MahmoodHashem/The_Odin_Projects/tree/main/react-projects/dev-cv-maker)**
+
 
 ### Contributing
 

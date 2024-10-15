@@ -1,0 +1,243 @@
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0.245);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 1rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.324);
+  border-radius: 1rem;
+}
+
+#root {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 1rem;
+}
+.cv,
+.form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.forms {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.cv {
+  max-width: 800px;
+  max-height: min-content;
+  flex: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 5px;
+}
+
+header li,
+.skills li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.linkedin a,
+.github a {
+  text-decoration: underline;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+.company {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.job-description:nth-child(odd) {
+  border-right: 3px solid;
+  padding-right: 1rem;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+}
+
+.project-description h3 {
+  text-decoration: underline;
+}
+
+.project-description h4 {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-description ul {
+  padding: 0 8px;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+.project-description a {
+  color: rgb(0, 117, 159);
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.form {
+  min-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+
+.input-control input,
+select {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-icon {
+  width: 20px;
+}
+
+.add-icon{
+  width: 50px;
+}
+
+
+.btn {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  margin: 5px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-btn {
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-btn {
+  background: #ff5454bd;
+  color: white;
+}
+
+
+.btns{
+  display: flex;
+  gap: 5px;
+}
+
+
+@media screen and (max-width: 900px) {
+  #root {
+    flex-direction: column-reverse;
+  }
+
+  .contacts{
+    grid-template-columns: 1fr;
+  }
+
+  .jobs{
+    grid-template-columns: 1fr;
+  }
+
+  .job-description {
+    border: 0px solid !important;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 14px;
+  }
+}
+
+
+@layer base {img {display: initial;}}
